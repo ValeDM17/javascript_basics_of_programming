@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let input1 = prompt("1st Number");
+        let input2 = prompt("2nd Number");
+        let input3 = prompt("3rd Number");
+
+        let num1 = parseInt(input1);
+        let num2 = parseInt(input2);
+        let num3 = parseInt(input3);
+
+        if (num1 > num2) {
+            compare = num1;
+        } else if (num1 > num3) {
+            compare = num1
+        } else if (num2 > num1) {
+            compare = num2
+        } else if (num2 > num3) {
+            compare = num2
+        } else if (num3 > num1) {
+            compare = num3
+        } else if (num3 > num2) {
+            compare = num3
+        } else {
+
+        }
+        alert("the largest is: " + compare);
+        console.log(compare);
+    </script>
+</body>
+
+</html>
