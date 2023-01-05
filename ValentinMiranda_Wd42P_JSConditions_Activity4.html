@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let input1 = prompt("Input Marks:")
+        let num1 = parseInt(input1);
+
+        if (num1 >= 90 && num1 <= 100) {
+            mark = "S grade";
+        } else if (num1 >= 80 && num1 <= 90) {
+            mark = "A grade";
+        } else if (num1 >= 70 && num1 <= 80) {
+            mark = "B grade";
+        } else if (num1 >= 60 && num1 <= 70) {
+            mark = "C grade";
+        } else if (num1 >= 50 && num1 <= 60) {
+            mark = "D grade";
+        } else if (num1 >= 40 && num1 <= 50) {
+            mark = "E grade";
+        } else if (num1 >= 0 && num1 <= 40) {
+            mark = "Student has failed";
+        } else {
+            mark = "Invalid marks";
+        }
+
+        alert(mark);
+        console.log("Grade Status: " + mark)
+    </script>
+</body>
+
+</html>
