@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function displayNumbers() {
+            let samp = "";
+            for (input = 1; input <= 10; input++) {
+                samp = samp + input + "\n";
+            }
+            console.log(samp);
+        }
+
+        function display2Loops() {
+            const LoopIn = [];
+            str = "";
+            str1 = ""
+            for (var lp = 1; lp < 6; lp++) {
+                str1 = str1 + lp + " ";
+                LoopIn[lp - 1] = str1;
+            }
+
+            for (var nt = 0; nt < 5; nt++) {
+                str = str + LoopIn[1] + "\n";
+            }
+            return str;
+        }
+
+        function LetterCount(Ch) {
+            const Ch2 = Ch.split('');
+            return Ch2.length;
+        }
+
+        function ConvertHr2Secs(hr) {
+            var secs = parseInt(hr) * 3600;
+            return secs;
+        }
+
+        //console.log(displayNumbers());
+        console.log(display2Loops());
+        //console.log(LetterCount());
+        //console.log(ConvertHr2Secs(1));
+    </script>
+</body>
+
+</html>
